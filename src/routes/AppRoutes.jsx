@@ -1,19 +1,16 @@
 import Login from '../pages/Login/Login'
 import Home from '../pages/Home/Home'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
-function AppRoutes (){
-    const lista = [
-        {
-            path: '/login',
-            element: <Login />,
-            hasLayout: false,
-            isPrivate: false,
-        },
-        {
-            path: '/home',
-            element: <Home />,
-            hasLayout: false,
-            isPrivate: false,
-        }
-    ]    
+
+export default function AppRoutes (){
+
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path='/login' element={<Login />}/>
+                <Route path='/' element={<Home />}/>
+            </Routes>
+        </BrowserRouter>
+    )
 }

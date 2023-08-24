@@ -1,53 +1,59 @@
+.geral{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./public/fundo.jpg');
+    background-size: cover;
+    padding-top: 15vh
+}
+
 .container{
-    max-width: 500px;
+    width: 400px;
     box-shadow: 0px 2px 30px rgba(97, 94, 94, 0.4);
-    margin: auto;
-    position: relative; 
-    z-index: 1; 
-    margin-top: 7%;
     border-radius: 20px;
+    background-color: rgb(189, 208, 225);
+    padding: 18px;
+    margin: auto;
+}
+
+.input{
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    border-bottom: 2px solid #4e4d4d;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input[type=submit]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #085588;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #1b223c;
+    transition: .5s;
+}
+
+.forgot_pass{
+    text-align: right;
     display: block;
 }
 
-.box{
-    min-height: 400px;   
-    padding: 50px 50px; 
+label{
+    font-weight: bold;
+}
+
+.logo{
     display: flex;
     align-items: center;
-}
-
-.div_info{
-    display: block;
-    line-height: 30px;
-}
-
-.head{
-    display: block;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 8px;
-    line-height: 30px;
-    transition: all 1s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
-}
-
- .service_name{
-    line-height: 28px;
-    display: block;
-    font-size: 16px;
-    color: #000;
-    font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } 
 
-
-
-.textbox_action{
-    margin-bottom: 20px;
-    font-size: 17px;
-    color: #f14242;
-    font-weight: 500; 
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-}
