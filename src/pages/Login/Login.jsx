@@ -8,27 +8,24 @@ export default function Login() {
                 <div className={styles.logo}>
                     <a href="#"><img src={logo} alt="logo" width="60%"/></a>
                 </div>  
-                <div className={styles.div_info}>
+                <div>
                     <form>
-                        <div>
-                            <div className={styles.textbox_div}>
-                                <span>
-                                    <label htmlFor="email">E-mail</label>
-                                    <input className={styles.input} type="email" placeholder="Digite seu e-mail" name="email" />
-                                </span>
-                                <span>
-                                    <label htmlFor="password">Senha</label>
-                                    <input className={styles.input} type="password" name="PASSWORD" placeholder="Digite sua Senha"  />
-                                </span>
-                            </div>
+                        <div className={styles.textbox_div}>
+                            <span>
+                                <label htmlFor="email">E-mail</label>
+                                <input className={styles.input} type="email" placeholder="Digite seu e-mail" name="email" />
+                            </span>
+                            <span>
+                                <label htmlFor="password">Senha</label>
+                                <input className={styles.input} type="password" name="PASSWORD" placeholder="Digite sua Senha"  />
+                            </span>
                         </div>  
                         <div className={styles.forgot_pass}>
                             <a href="#">Esqueceu a Senha?</a>
                         </div>
                         <div>
-                            <input type="submit" value="Enviar"/>
+                            <input className={styles.input} type="submit" value="Entrar"/>
                         </div>
-
                     </form>
                 </div>
             </div>
